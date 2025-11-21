@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NetPulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="icon.png" class="app-icon" alt="NetPulse Icon">
+    <h1>NetPulse</h1>
+  </div>
+
+  <div class="speed-row">
+    <div class="speed-box">
+      <span>Download</span>
+      <strong id="download">-- Mbps</strong>
+    </div>
+
+    <div class="speed-box">
+      <span>Upload</span>
+      <strong id="upload">-- Mbps</strong>
+    </div>
+  </div>
+
+  <div class="ping-box">
+    <span>Ping</span>
+    <strong id="ping">-- ms</strong>
+  </div>
+
+  <div id="statusBox">
+    <span id="statusText">Status: Idle</span>
+    <div id="loader" class="spinner hidden"></div>
+  </div>
+
+  <button id="refresh">Run Test</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
